@@ -55,7 +55,6 @@ def generate_M_vectors(length=3, bound=5, i=1):
     """
     Generates all the M-vectors of length 'length' where m_1 is less than or equal to 'bound'.
     """
-    
     if i==1:
         start = [1]
     else:
@@ -70,3 +69,6 @@ def generate_M_vectors(length=3, bound=5, i=1):
         tails = generate_M_vectors(length=length, bound=next_bound, i=i+1)
         for tail in tails:
             yield start + [a] + tail
+
+# TODO Add support for lexicographic ideals.
+# TODO Add an examples/tests file.
