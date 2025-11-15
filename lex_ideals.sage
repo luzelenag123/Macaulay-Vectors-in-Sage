@@ -86,7 +86,11 @@ def get_betti_table(h):
 def beta(betti_table, i,j):
     row = j-i 
     column = i 
-    return betti_table[row][column]
+    try:
+        value = betti_table[row][column]
+    except (IndexError):
+        value = 0
+    return value
     
 
 # Example
