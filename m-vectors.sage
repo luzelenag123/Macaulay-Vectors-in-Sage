@@ -1,3 +1,6 @@
+from functools import lru_cache
+from sage.all import binomial
+
 @lru_cache(maxsize=None)
 def macaulay_decomposition(a, d):
     """
@@ -51,7 +54,7 @@ def is_m_sequence(seq):
             return False
     return True
 
-def generate_M_vectors(length=3, bound=5, i=1):
+def generate_M_vectors(length, bound=5, i=1):
     """
     Generates all the M-vectors of length 'length' where m_1 is less than or equal to 'bound'.
     """
