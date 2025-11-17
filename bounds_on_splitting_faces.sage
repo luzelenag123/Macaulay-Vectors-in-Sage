@@ -48,6 +48,6 @@ def upper_bound_on_splitting_faces(h):
 
 
 # Examples
-h = [1, 5, 7, 10, 5, 3, 0]
-print(lower_bound_on_splitting_faces(h))
-print(upper_bound_on_splitting_faces(h))
+#h = [1, 5, 7, 10, 5, 3, 0]
+#print(lower_bound_on_splitting_faces(h))
+#print(upper_bound_on_splitting_faces(h))
